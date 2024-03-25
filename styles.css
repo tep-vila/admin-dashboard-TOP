@@ -3,3 +3,32 @@
   padding: 0;
   margin: 0;
 }
+
+/* FOR MAIN GRID */
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 3fr;
+  outline: 1px solid black;
+}
+
+/* FOR HEADER */
+
+.head {
+  background-color: red;
+  grid-area: 1/2/2/3;
+}
+
+/* FOR SIDEBAR */
+
+.sidebar {
+  background-color: blue;
+  grid-area: 1/1/3/2;
+}
+
+/* FOR MAIN CONTENT */
+
+.main-content {
+  background-color: gray;
+}
