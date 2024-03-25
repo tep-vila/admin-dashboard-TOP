@@ -27,7 +27,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  gap: 12vh;
+  gap: 8vh;
 
   padding: 4vh 0 0 5vh;
 
@@ -35,7 +35,18 @@ body {
   grid-area: 1/1/3/2;
 }
 
+.sidebar img {
+  width: 35px;
+  filter: invert(100%) sepia(1%) saturate(7498%) hue-rotate(106deg)
+    brightness(104%) contrast(101%);
+}
+
 .dashboard {
+  display: flex;
+  align-items: center;
+}
+
+.main-features div {
   display: flex;
   align-items: center;
 }
