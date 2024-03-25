@@ -158,11 +158,58 @@ input[type="search"] {
   display: flex;
 }
 
+/* FOR GRID CARD IN MAIN */
 .left-main {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   width: 70%;
-  height: 100%;
+  height: 90%;
+  gap: 2vh;
+  margin: 4vh 0 0 3vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+  gap: 15px;
+  height: 90%;
+}
+
+.cell {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 4vh;
+}
+
+.text-cont h2 {
+  padding-bottom: 0.3vh;
+}
+
+.card-content p {
+  font-size: 0.8rem;
+}
+
+.shadow {
+  width: 1vw;
+  background-color: #f0b429;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 1.5vw;
+}
+.card-buttons img {
+  width: 30px;
 }
 
 .right-section {
