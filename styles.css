@@ -155,4 +155,19 @@ input[type="search"] {
 
 .main-content {
   background-color: #e2e8f0;
+  display: flex;
+}
+
+.left-main {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
 }
