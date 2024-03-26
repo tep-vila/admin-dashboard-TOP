@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 1fr 5fr;
   outline: 1px solid black;
 }
 
@@ -87,7 +87,7 @@ input[type="search"] {
 .profile-section {
   display: flex;
   justify-content: space-around;
-  gap: 20vw;
+  gap: max(20vw, 1vw);
 }
 
 .profile-section .right {
@@ -103,6 +103,7 @@ input[type="search"] {
   width: 7vw;
   padding: 10px 15px;
   border-radius: 15px;
+  font-size: max(1rem, 5%);
 }
 
 .profile-info p:first-child {
@@ -156,6 +157,7 @@ input[type="search"] {
 .main-content {
   background-color: #e2e8f0;
   display: flex;
+  gap: 2.5vw;
 }
 
 /* FOR GRID CARD IN MAIN */
@@ -212,9 +214,62 @@ input[type="search"] {
   width: 30px;
 }
 
+/* FOR RIGHT SECTION OF MAIN */
+
 .right-section {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  height: 100%;
+  width: 20vw;
+  height: 90%;
+  margin-top: 5vh;
+  gap: 2vh;
+}
+
+.announcement-cont,
+.trending-prof {
+  background-color: #ffffff;
+  width: 80%;
+  height: 28vh;
+  border-radius: 10px;
+}
+
+.part {
+  font-size: 0.6rem;
+  padding: 0.5vh 0.4vw;
+  width: 15vw;
+}
+
+.announcement-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.part hr {
+  margin: 10px;
+}
+
+.trending-prof {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1vh 1vw;
+  gap: 1vh;
+  font-size: 0.8rem;
+}
+
+.trending-prof img {
+  width: 35px;
+  object-fit: cover;
+}
+
+.prof-card {
+  display: flex;
+  gap: 0.8vw;
+  align-items: center;
+}
+
+div p:first-child {
+  font-weight: bold;
 }
